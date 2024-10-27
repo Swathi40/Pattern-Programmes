@@ -1,0 +1,16 @@
+num=5
+space=num-1
+for line in range(1,num+1):
+    for spaces in range(space):
+        print(' ',end=' ')
+    for st in range(line):
+         print('*',end=' ')
+    print()
+    space-=1
+
+#Output#
+        * 
+      * * 
+    * * * 
+  * * * * 
+* * * * * 
