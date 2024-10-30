@@ -1,0 +1,44 @@
+num=5
+for line in range(1,num+1):
+    for col in range(line):
+        print( num+1-line,end=' ')
+    print()    
+
+#Output#
+5 
+4 4 
+3 3 3 
+2 2 2 2 
+1 1 1 1 1 
+
+num=5
+for line in range (num,0,-1):
+    for col in range(line):
+        print( num+1-line,end=' ')
+    print()    
+
+#Output#
+1 1 1 1 1 
+2 2 2 2 
+3 3 3 
+4 4 
+5 
+
+
+num =4
+space =num-1
+copy =1
+for line in range(1,num*2,2):
+    for spaces in range(space):
+        print(' ',end=' ')
+    for val in range(line):
+        print(copy,end=' ')
+    print()
+    copy+=1
+    space-=1
+
+#Output#
+      1 
+    2 2 2 
+  3 3 3 3 3 
+4 4 4 4 4 4 4 
